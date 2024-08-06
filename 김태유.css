@@ -1,0 +1,480 @@
+*{
+  margin:0;
+  padding:0;
+}
+
+main{
+  border-top: 0.5px solid black;
+}
+
+footer{
+  border-top: 1px solid black;
+}
+
+header{
+  height: 92px;
+  width: 100%;
+  position: fixed;
+  background-color: white;
+
+}
+
+.wrap_header{
+  display: flex;
+  height:92px;
+  width:78%;
+  margin: auto;
+  z-index: 100;  
+}
+
+.logo_header img{
+  height: 25px;
+  width: 75px;
+}
+
+.logo_header {
+  margin: auto;
+
+}
+
+.nav_list{
+  display: flex;
+  position: relative;
+  list-style-type: none;
+  width: 800px;
+  justify-content: center;
+  
+}
+
+.nav_li_list a{
+  text-decoration: none;
+  /* font-family:; */
+  color: black;
+  font-weight:bold;
+  display: block;
+  padding: 0 30px;
+  line-height: 85px;
+  font-size: 17px;
+  letter-spacing: -.5px;
+}
+
+.dropdown-container{
+  display: none;
+  position: absolute;
+  padding: 0 24.5px;
+  background: black;
+  border-radius: 50px;
+  white-space: nowrap;
+  box-sizing: border-box;
+  z-index: 100;
+  transform: translateX(-30%);
+}
+
+.dropdown-container a{
+  color: white;
+  display: inline-block;
+}
+
+.nav_li_list:hover .dropdown-container {
+  display: inline-block;
+}
+
+.nav_li_list div:hover {
+  opacity: 0.5;
+}
+
+.area_util{
+  height: 36px;
+  width: 136px;
+  margin: auto;
+  
+}
+
+.util_list{
+  display: flex;
+  float:right;
+}
+
+.util_list img{
+  width: 36px;
+  height: 36px;
+  display: block;
+  margin:0 15px;
+}
+
+.util_list img:hover {
+  filter: brightness(0.8);
+  border-radius: 25px;
+}
+
+/* 메인 */
+main section{
+  margin: auto;
+  width: 78%;
+
+}
+section h3{
+  margin: 20px 0;
+}
+main h3{
+  font-size: 32px;
+  line-height: 48px;
+
+}
+/* 메인_카카오이야기 */
+#story_logo{
+  width:32px;
+  height:32px;
+  margin-right: 10px;
+}
+
+.main_story{
+  margin-top: 200px;
+  height: 540px;
+  overflow: hidden;
+
+}
+
+.story_img{
+  margin:0 auto;
+  padding-top: 10px;
+  list-style-type: none;
+}
+
+.story_img>li{
+  float:left;
+  padding: 0 4px;
+  
+}
+/* 서비스파트 */
+.main_service{
+  margin-top: 100px;
+  height: 800px;
+}
+
+#service_logo{
+  width:32px;
+  height:32px;
+  margin-right: 10px;
+}
+
+.inner_service{
+  margin:auto;
+  width: 91%;
+}
+.list_service img {
+  margin: 10px;
+}
+.list_service{
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+}
+
+.service_btn img {  
+  display: block;
+  margin: auto;
+}
+
+
+/* 뉴스파트 */
+.main_news{
+  height:1150px;
+
+}
+#news_logo{
+  width:32px;
+  height:32px;
+  margin-right: 10px;
+}
+
+.news_container{
+  width:91%;
+  margin: auto;
+}
+
+.news_head{
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+}
+
+.news_mid{
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+}
+
+.news_container img{
+  margin: 10px;
+}
+.news_btm{
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 헬프파트 */
+.main_help{
+  height: 1000px;
+}
+
+#help_logo{
+  width:32px;
+  height:32px;
+  margin-right: 10px;
+}
+
+.help_container{
+  width:91%;
+  margin: auto;
+}
+
+.item_box{
+  display: flex;
+  justify-content: space-between;
+  padding: 35px;
+  margin: 10px;
+  text-decoration: none;
+  align-items: center;
+  background-color: #F2F2F2;
+  border-radius: 25px;
+  height: 80px;
+  width: 350px;
+}
+
+.help_list2 .item_box{
+  display: flex;
+  justify-content: space-between;
+  padding: 35px;
+  margin: 10px;
+  text-decoration: none;
+  align-items: center;
+  background-color: #F2F2F2;
+  border-radius: 25px;
+  height: 80px;
+  width: 585px;
+}
+
+.item p{
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
+}
+
+.help_container a{
+  text-decoration: none;
+}
+
+.item_box span{
+  display: flex;
+  text-align: center;
+  font-size: 14px;
+  color: black;
+}
+
+.item_box span{
+  align-items: center;
+}
+.help_icon{
+  width: 60px;
+  height: 60px;
+}
+.help_list{
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+}
+
+.help_inner_container{
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  justify-content: center;
+}
+
+.help_list2{
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+}
+
+.help_container img{
+  margin: 10px;
+}
+
+.help_btn{
+  margin: auto;
+  width: 350px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 38px;
+  font-size: 22px;
+  color: black;
+  background-color: #f2f2f2;
+}
+
+.help_btn a{
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.help_btn img{
+  margin: 15px 10px 10px 10px;
+}
+
+/* 푸터 */
+
+.footer_service{
+  width:78%;
+  margin: auto;
+  height: 450px;
+
+}
+
+.Wrap_tags{
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.footer_list{
+  list-style-type: none;
+  display: block;
+}
+
+.footer_list a{
+  text-decoration: none;
+  color: black;
+  opacity: 0.6;
+}
+
+/*푸터릴레이션쉽 파트 */
+.footer_relation{
+  width:78%;
+  margin:auto;
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+}
+
+.relation_tags{
+  display: flex;
+}
+
+.footer_dropdown_container{
+  margin: 0px;
+  padding: 10px 20px 12px;
+  position: relative;
+}
+
+.footer_dropdown_container a{
+  text-decoration: none;
+  color: black;
+  opacity: 0.6;
+}
+
+.footer_relate_container{
+  margin: 0px;
+  padding: 10px 20px 12px;
+  background-color: #F2F2F2;
+  border-radius: 24px;
+  position: relative;
+}
+
+.footer_relate_container a{
+  text-decoration: none;
+  color: black;
+  opacity: 0.6;
+}
+
+.footer_dropdown{
+  display: none;
+  list-style-type: none;
+  position: absolute;
+  bottom: 30px;
+  padding: 16px 16px;
+  background-color: #F2F2F2;
+  border-radius: 12px;
+  min-width: 120px;
+}
+
+.footer_dropdown a{
+  display: block;
+  padding: 0 10px;
+  font-size: 12px;
+  color: black;
+  font-weight: 700;
+  white-space: nowrap;
+  margin: 10px 0;
+}
+
+.relate_dropdown{
+  display: none;
+  list-style-type: none;
+  position: absolute;
+  bottom: 40px;
+  left: 0px;
+  padding: 16px 16px;
+  background-color: #F2F2F2;
+  border-radius: 12px;
+}
+
+.relate_dropdown a{
+  display: block;
+  padding: 0 10px;
+  font-size: 12px;
+  color: black;
+  font-weight: 700;
+  white-space: nowrap;
+  margin: 10px 0;
+}
+
+.footer_dropdown_container:hover .footer_dropdown{
+  display: block;
+}
+
+.footer_relate_container:hover .relate_dropdown{
+  display: block;
+}
+
+.relation_tags div:hover {
+  opacity: 1;
+  font-weight: 700;
+}
+
+/* 푸터 카피라이트 */
+.footer_copyright{
+  width:78%;
+  height: 100px;
+  margin-left: 200px;
+  font-size: 12px;
+  opacity: 0.6;
+}
+
+.copy_right{
+  margin: 40px;
+}
+
+.copy_right a{
+  text-decoration: none;
+  color: black;
+  
+}
+
