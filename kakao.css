@@ -1,3 +1,4 @@
+/* 수정된부분은 주석으로 남김 */
 *{
   margin:0;
   padding:0;
@@ -22,8 +23,8 @@ header{
 .wrap_header{
   display: flex;
   height:92px;
-  width:78%;
-  margin: auto;
+  /* width:78%; 사용너비를 지정없이 마진으로 변경*/
+  margin: 0 auto; 
   z-index: 100;  
 }
 
@@ -34,7 +35,6 @@ header{
 
 .logo_header {
   margin: auto;
-
 }
 
 .nav_list{
@@ -42,8 +42,7 @@ header{
   position: relative;
   list-style-type: none;
   width: 800px;
-  justify-content: center;
-  
+  justify-content: center;  
 }
 
 .nav_li_list a{
@@ -61,7 +60,7 @@ header{
 .dropdown-container{
   display: none;
   position: absolute;
-  padding: 0 24.5px;
+  padding: 0 24px;
   background: black;
   border-radius: 50px;
   white-space: nowrap;
@@ -86,20 +85,19 @@ header{
 .area_util{
   height: 36px;
   width: 136px;
-  margin: auto;
-  
+  margin: auto; 
 }
 
 .util_list{
   display: flex;
-  float:right;
+  float: right;
 }
 
 .util_list img{
   width: 36px;
   height: 36px;
   display: block;
-  margin:0 15px;
+  margin: 0 15px;
 }
 
 .util_list img:hover {
@@ -107,15 +105,16 @@ header{
   border-radius: 25px;
 }
 
-/* 메인 */
+/* 메인섹션이 차지할 공간 설정 */
 main section{
   margin: auto;
   width: 78%;
-
 }
+/* 섹션 제목위아래 여백설정 */
 section h3{
   margin: 20px 0;
 }
+
 main h3{
   font-size: 32px;
   line-height: 48px;
@@ -162,9 +161,11 @@ main h3{
   margin:auto;
   width: 91%;
 }
-.list_service img {
+
+/* .list_service img {
   margin: 10px;
-}
+} */
+
 .list_service{
   list-style-type: none;
   display: grid;
@@ -173,11 +174,73 @@ main h3{
   justify-content: center;
 }
 
-.service_btn img {  
-  display: block;
-  margin: auto;
+.sv_list_container{
+  display: flex;
+  justify-content: space-between;
+  height: 160px;
+  margin: 20px;
+  padding: 10px 42px;
+  background-color: #F2F2F2;
+  align-items: center;
+  border-radius: 25px;
 }
 
+.service_icon_box{
+  display: flex;
+}
+
+.service_icon_box img{
+  margin: 5px;
+}
+
+#img_black{
+  opacity: 0.5;
+}
+
+#img_black:hover {
+  opacity: 1;
+}
+
+.sv_list_container p{
+  font-size: 30px;
+  letter-spacing: -.8px;
+  color: black;
+  word-break: break-all;
+  font-weight: bold;
+}
+
+/* .service_btn img {  
+  display: block;
+  margin: auto;
+} */
+
+.service_btn{
+  margin: auto;
+  width: 350px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 38px;
+  font-size: 22px;
+  color: black;
+  background-color: #f2f2f2;
+}
+
+.service_btn a{
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.btn_box{
+  display: flex;
+  align-items: center;
+}
+
+.service_btn img{
+  margin: 15px 10px 10px 10px;
+}
 
 /* 뉴스파트 */
 .main_news{
