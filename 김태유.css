@@ -365,6 +365,11 @@ main h3{
   opacity: 0.6;
 }
 
+.footer_list a:hover{
+  opacity: 1;
+  font-weight: bold;
+}
+
 /*푸터릴레이션쉽 파트 */
 .footer_relation{
   width:78%;
